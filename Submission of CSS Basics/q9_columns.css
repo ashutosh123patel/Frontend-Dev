@@ -1,0 +1,32 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #f4f4f4;
+    padding: 2%;
+}
+
+.newspaper {
+    background-color: #fff;
+    padding: 2rem;
+    column-count: 3;
+    column-gap: 2rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.headline {
+    column-span: all;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.news-image {
+    float: left;
+    width: 40%;
+    margin: 0 1rem 1rem 0;
+    border-radius: 8px;
+}
+
+p {
+    margin-bottom: 1rem;
+}

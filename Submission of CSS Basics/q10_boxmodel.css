@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(44, 62, 80, 0.95);
+    color: #fff;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 152, 0, 0.7);
+    border-radius: 5px;
+}
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero.jpg') center/cover no-repeat;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    color: #fff;
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 5%;
+    background-color: #ecf0f1;
+    gap: 2%;
+}
+
+.about-text, .about-image {
+    flex: 1 1 45%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 5%;
+    gap: 2%;
+}
+
+.service-box {
+    flex: 1;
+    background: rgba(255, 152, 0, 0.2);
+    padding: 2rem;
+    text-align: center;
+    border: 2px solid rgba(255,152,0,0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.contact-section {
+    padding: 4% 5%;
+    background-color: #bdc3c7;
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: rgba(44, 62, 80, 0.8);
+}
+
+button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(44, 62, 80, 0.8);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(44, 62, 80, 1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(44, 62, 80, 0.95);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .about-section, .services-section {
+        flex-direction: column;
+    }
+}
+
