@@ -1,0 +1,96 @@
+/* ===========================
+   Base Layout
+   =========================== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   Attribute Selectors
+   =========================== */
+
+/* Selects only input elements with type="text" */
+input[type="text"] {
+  border: 2px solid #4f46e5;
+  padding: 8px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Selects links that START with https */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+/* ===========================
+   Pseudo-classes
+   =========================== */
+
+/* Hover pseudo-class */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Focus pseudo-class */
+input:focus {
+  border-color: #dc2626;
+  outline: none;
+}
+
+/* nth-child pseudo-class */
+.items li:nth-child(2n) {
+  background: #e2e8f0;
+}
+
+/* ===========================
+   Pseudo-elements
+   =========================== */
+
+/* ::before pseudo-element */
+.items li::before {
+  content: "• ";
+  color: #4f46e5;
+}
+
+/* ::after pseudo-element */
+.items li::after {
+  content: " ✓";
+  color: #16a34a;
+}
+
+/* ===========================
+   Combinators
+   =========================== */
+
+/* Descendant selector (space) */
+.parent p {
+  color: #1e40af;
+}
+
+/* Child selector (>) */
+.parent > p {
+  font-weight: bold;
+}
+
+/* Adjacent sibling selector (+) */
+p + span {
+  color: #dc2626;
+}
+
+/* General sibling selector (~) */
+p ~ p {
+  background: #fef3c7;
+  padding: 6px;
+  border-radius: 4px;
+}
+

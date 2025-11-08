@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+header, footer {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  background: #1e1e1e;
+  padding: 12px 0;
+  z-index: 10;
+}
+
+header { top: 0; }
+footer { bottom: 0; }
+
+main {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+section {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.linear {
+  background: linear-gradient(135deg, #4f46e5, #22d3ee);
+  background-attachment: fixed;
+}
+
+.radial {
+  background: radial-gradient(circle, #dc2626, #7f1d1d);
+}

@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  color: #222;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.box {
+  width: 200px;
+  background: white;
+  border-width: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.box:hover {
+  border-color: crimson;
+}
+
+.small { padding: 10px; border-radius: 4px; }
+.medium { padding: 20px; border-radius: 10px; }
+.large { padding: 30px; border-radius: 16px; }
+.xlarge { padding: 40px; border-radius: 24px; }
+
+.solid { border-style: solid; }
+.dashed { border-style: dashed; }
+.double { border-style: double; }
+.groove { border-style: groove; }
