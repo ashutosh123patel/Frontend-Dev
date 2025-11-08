@@ -1,0 +1,71 @@
+/* Element Selector */
+p {
+  font-size: 1rem;
+  padding: 6px 0;
+}
+
+/* Class Selector */
+.highlight {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* ID Selector */
+#unique {
+  color: #dc2626;
+  font-size: 1.1rem;
+}
+
+/* Attribute Selector */
+a[href^="https"] {
+  color: green;
+  font-weight: bold;
+}
+
+a[href^="http:"] {
+  color: #7f1d1d;
+}
+
+/* Descendant Selector */
+.parent p {
+  background: #e2e8f0;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+/* Child Selector (>) */
+.parent > p {
+  border-left: 4px solid #2563eb;
+}
+
+/* Adjacent Sibling Selector (+) */
+.parent p + span {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* General Sibling Selector (~) */
+.parent p ~ p {
+  background: #fde68a;
+}
+
+/* Basic layout and structure */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  padding: 20px;
+}
+
+header, footer {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
