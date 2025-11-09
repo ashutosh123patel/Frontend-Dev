@@ -1,0 +1,5 @@
+.hero-section {
+    height: 70vh;
+    background: linear-gradient(to right, #005bea, #00c6fb);
+    display: flex;
+}
