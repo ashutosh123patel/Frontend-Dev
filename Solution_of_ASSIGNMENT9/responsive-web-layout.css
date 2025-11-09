@@ -1,0 +1,88 @@
+/* Basic page setup */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    color: #222;
+}
+
+/*Header Style */
+.site-header {
+    /* Header items placed side-by-side */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    background: #ffffff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #0077cc;
+}
+
+/* main Content Area*/
+.content-area {
+    padding: 40px 20px;
+}
+
+.features {
+    /* All feature boxes arranged horizontally */
+    display: flex;
+    gap: 24px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Individual feature card */
+.feature-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    /* Small hover animation */
+    transition: transform 0.3s ease;
+}
+
+/* Slight zoom when hovered */
+.feature-box:hover {
+    transform: scale(1.04);
+}
+
+.feature-box h3 {
+    margin-top: 0;
+}
+
+/*Footer Styling */
+.site-footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #ffffff;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+
+/*Responsive Design  */
+/* Stack feature boxes vertically below 750px */
+@media (max-width: 750px) {
+    .features {
+        flex-direction: column;
+    }
+}

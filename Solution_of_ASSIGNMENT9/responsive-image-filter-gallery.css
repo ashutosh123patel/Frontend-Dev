@@ -1,0 +1,88 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+    text-align: center;
+    padding: 20px;
+}
+
+header, footer {
+    padding: 16px 0;
+}
+
+/* Gallery grid layout */
+.gallery {
+    /* The grid adjusts automatically based on screen size */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Each image + caption box */
+.card {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Smooth hover effect */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: filter 0.4s ease;
+}
+
+/* Different filters applied to each image */
+
+.blur img {
+    filter: blur(3px);
+}
+
+.grayscale img {
+    filter: grayscale(100%);
+}
+
+.sepia img {
+    filter: sepia(90%);
+}
+
+.brightness img {
+    filter: brightness(60%);
+}
+
+.contrast img {
+    filter: contrast(200%);
+}
+
+.hue img {
+    filter: hue-rotate(120deg);
+}
+
+/* Removing filter on hover */
+.card img:hover {
+    filter: none;
+}
+
+/* Caption under each image */
+figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Mobile layout: stack images in one column */
+@media (max-width: 600px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
